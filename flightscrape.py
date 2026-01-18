@@ -77,10 +77,10 @@ print("Moved to the next field")
 
 time.sleep(1)
 
-# ENTER on the active element
-active_element = driver.switch_to.active_element
-active_element.send_keys(Keys.ENTER)
-print("Confirmed selection with ENTER")
+wait = WebDriverWait(driver, 10)
+search_button = wait.until(EC.element_to_be_clickable((By.XPATH, '//button[@aria-label="Search"]')))
+search_button.click()
+print("Clicked Search button")
 
 print("Search initiated!")
 
@@ -172,9 +172,9 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-sender_email = "jitha210806@gmail.com"
-receiver_email = "jitha210806@gmail.com"
-password = "fwky elmu ahex shaw"  # Gmail app password
+sender_email = " "
+receiver_email = " "
+password = " "  # Gmail app password
 
 msg = MIMEMultipart("alternative")
 msg["Subject"] = "Flight Data"
