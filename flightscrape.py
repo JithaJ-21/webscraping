@@ -10,9 +10,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import random
-from bs4 import BeautifulSoup
-from selenium.webdriver.common.keys import Keys
-import pandas as pd  
+from selenium.webdriver.common.keys import Keys  
 import csv
 
 from_dest = "Bengaluru"
